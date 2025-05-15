@@ -1,4 +1,6 @@
-with customers as (
+-- This is the customers model
+
+with cust as (
     select * from {{ ref ('stg_jaffle_shop__customers')}}
 ),
 orders as (
